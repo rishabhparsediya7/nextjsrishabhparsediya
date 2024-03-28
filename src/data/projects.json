@@ -1,0 +1,158 @@
+{
+    "projects": [
+        {
+            "name": "BlogVerse",
+            "technology_used": [
+                "JavaScript",
+                "MongoDB",
+                "React",
+                "Express",
+                "TailwindCSS"
+            ],
+            "image": "blog.jfif",
+            "description": "An authenticated end to end blogging website for the users where users can create blogs, share their views and will have a separate account activity restricted to only user itself, developed with MERN Stack and for Authentication, used jsonwebtoken also known as jwt and bcrypt.js",
+            "link": "https://rishabhparsediyablogverse.netlify.app/"
+        },
+        {
+            "name": "E Commerce (Nutrients Selling)",
+            "technology_used": [
+                "JavaScript",
+                "Node.js",
+                "Express",
+                "MongoDB"
+            ],
+            "image": "nutrients.jfif",
+            "description": "Project B is a full-stack web application developed using JavaScript technologies including Node.js and Express for the backend and MongoDB for the database. It allows users to create, read, update, and delete data through RESTful APIs.",
+            "link": "https://rishabhparsediyaecommerce.netlify.app/"
+        },
+        {
+            "name": "React Quiz App",
+            "created_at": "2024-01-10",
+            "technology_used": [
+                "Java",
+                "Spring Boot",
+                "Angular"
+            ],
+            "image": "quiz.jpg",
+            "description": "A quiz app based on the react,js including 20 question with no time limit. It as a responsive app which makes it feasible for the all screens. After the quiz, you will be able to see the correct, wrong, and unattempted Q&A. Try using the link.",
+            "link": "https://rishabhparsediyaquizapp.netlify.app/"
+        },
+        {
+            "name": "Next.js Todo App",
+            "technology_used": [
+                "Next.js",
+                "TypeScript",
+                "TailwindCSS",
+                "CSS"
+            ],
+            "description": "Getting started with Next.js with a simple Todo App",
+            "image": "nextjstodo.jfif",
+            "link": "https://nextjs-todo-navy.vercel.app/"
+        },
+        {
+            "name": "HR Management Systems",
+            "technology_used": [
+                "Python",
+                "Django",
+                "HTML",
+                "CSS",
+                "Firestore"
+            ],
+            "description": "A Django Framework based Web App that records all the forms filled by the employees for the projects, records the companies information. It is integrated with a payment gateway that is used through RazorPay Payment Gateway. Database is used as firebase, as it is a live realtime database.",
+            "image": "hrmanagement.jpg",
+            "link": "#"
+        },
+        {
+            "name": "Digital Medical Diagnosis",
+            "technology_used": [
+                "Python",
+                "Django",
+                "HTML",
+                "CSS",
+                "Firestore",
+                "SQL"
+            ],
+            "description": "It is a software that solves real-time problems and helps the users to get to know about their diseases and their severities. A user just has to upload an image of his her X-ray and the software is built in such a way that It can recognize its corresponding results",
+            "image": "dmd.jpg",
+            "link": "#"
+        },
+        {
+            "name": "Java Spring Boot Messaging Application",
+            "technology_used": [
+                "Java",
+                "Spring Boot",
+                "Thymeleaf",
+                "Firebase",
+                "HTML",
+                "CSS",
+                "BootStrap"
+            ],
+            "description": "A project based on Spring Boot, Thymeleaf and Firebase which integrates with Twilio Messaging Service used to send SMS on phone. It records all the OTP requests being made and stored them in the firebase. It holds a static JSON file which loads all the static contacts.",
+            "image": "messagingapp.jpg",
+            "link": "#"
+        },
+        {
+            "name": "REST APIs for Blogs",
+            "technology_used": [
+                "Java",
+                "Spring Boot",
+                "JPA",
+                "SQL"
+            ],
+            "description": "A RestAPI project developed for the blogs. We can perform crud operations like Save the Blog, Read all the blogs, Read the blog with ID, Delete the blog with ID, And update the blog with firebase. Also, fetch the response from id and other relevant parameters.",
+            "image": "restapi.jpg",
+            "link": "#"
+        },
+        {
+            "name": "E Commerce Web App",
+            "technology_used": [
+                "Node.js",
+                "HTML",
+                "CSS",
+                "BootStrap",
+                "MongoDB"
+            ],
+            "description": "It is basic E Commerce Web App design which uploads all the pictures and the description of the products, and displays it in the frontend. The database used here is MongoDB, because of the NoSQL efficiency.",
+            "image": "ecommerce.jpg",
+            "link": "#"
+        },
+        {
+            "name": "Weather App",
+            "technology_used": [
+                "Node.js",
+                "HTML",
+                "CSS",
+                "BootStrap",
+                "MongoDB"
+            ],
+            "description": "It is a weather app that shows the live weather of a city, whether it be temperature, humidity, pressure and other relevant parameters.",
+            "image": "weatherapp.jpg",
+            "link": "https://github.com/rishabhparsediya7/WeatherApp"
+        },
+        {
+            "name": "NEWS App",
+            "technology_used": [
+                "Node.js",
+                "HTML",
+                "CSS",
+                "BootStrap",
+                "MongoDB"
+            ],
+            "description": "News App is designed in a mobile format view, which shows all the categorical news from the different categories provided in the app. Sports, Entertainment, Music, Food, Health are the categories that are already defined. But, if one wants to search something else, that was also being introduced in the news app.",
+            "image": "newsapp.jpg",
+            "link": "https://github.com/rishabhparsediya7/News_App"
+        },
+        {
+            "name": "Portfolio",
+            "technology_used": [
+                "React.js",
+                "HTML",
+                "CSS",
+                "JS"
+            ],
+            "description": "A self portfolio developed by me.",
+            "image": "next.svg",
+            "link": "/"
+        }
+    ]
+}
