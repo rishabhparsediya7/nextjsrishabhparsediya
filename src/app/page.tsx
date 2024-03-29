@@ -1,3 +1,4 @@
+import { ContactForm } from "@/components/ContactForm";
 import { ExperienceSection } from "@/components/ExperienceSection";
 import { NavbarDemo } from "@/components/Nav";
 import ProfileSection from "@/components/ProfileSection";
@@ -10,6 +11,7 @@ export default function Home() {
       <ProfileSection />
       <ProjectsSection />
       <ExperienceSection />
+      <ContactForm />
     </main>
   );
 }
