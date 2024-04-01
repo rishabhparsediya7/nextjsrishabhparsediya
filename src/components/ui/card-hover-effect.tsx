@@ -122,16 +122,15 @@ export const CardImage = ({
     return (
         <div
             className={
-                "mt-8 h-[18rem]"}
+                "mt-8 h-full"}
         >
             <Image
                 src={`/${image}`}
                 alt={'image'}
                 height={400}
                 width={400}
-                layout="fixed"
                 style={{ objectFit: "contain" }}
-                className="rounded-md"
+                className="rounded-md h-full flex-grow"
             />
         </div>
     );

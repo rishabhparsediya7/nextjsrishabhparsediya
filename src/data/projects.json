@@ -9,7 +9,7 @@
                 "Express",
                 "TailwindCSS"
             ],
-            "image": "blog.jfif",
+            "image": "blog.jpg",
             "description": "An authenticated end to end blogging website for the users where users can create blogs, share their views and will have a separate account activity restricted to only user itself, developed with MERN Stack and for Authentication, used jsonwebtoken also known as jwt and bcrypt.js",
             "link": "https://rishabhparsediyablogverse.netlify.app/"
         },
@@ -21,8 +21,8 @@
                 "Express",
                 "MongoDB"
             ],
-            "image": "nutrients.jfif",
-            "description": "Project B is a full-stack web application developed using JavaScript technologies including Node.js and Express for the backend and MongoDB for the database. It allows users to create, read, update, and delete data through RESTful APIs.",
+            "image": "nutrients.jpg",
+            "description": "This is a E Commerce site for the users who want to buy something from the products, it allows them to filter the products as well according to their needs and payment integration of RazorPay.",
             "link": "https://rishabhparsediyaecommerce.netlify.app/"
         },
         {
@@ -145,13 +145,12 @@
         {
             "name": "Portfolio",
             "technology_used": [
+                "Next.js",
                 "React.js",
-                "HTML",
-                "CSS",
-                "JS"
+                "TypeScript"
             ],
-            "description": "A self portfolio developed by me.",
-            "image": "next.svg",
+            "description": "A self portfolio developed by myself on Next.js. You can reach out to me in the contacts section. You can share the number or email, I will get back to you.",
+            "image": "portfolio.PNG",
             "link": "/"
         }
     ]
