@@ -16,8 +16,11 @@
     "framer-motion": "^11.0.22",
     "lucide-react": "^0.363.0",
     "next": "14.1.4",
+    "nodemailer": "^6.9.13",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "^7.51.2",
+    "react-toastify": "^10.0.5",
     "tailwind-merge": "^2.2.2"
   },
   "devDependencies": {

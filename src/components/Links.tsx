@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail, icons } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import Link from 'next/link';
 
 interface LinkType {
@@ -14,8 +14,9 @@ export function Links() {
         { link: "https://www.linkedin.com/in/rishabh-parsediya/", name: < Linkedin /> },
         { link: "mailto:parsediyarishabh@gmail.com", name: <Mail /> }
     ];
+
     return (
-        <div className="w-full bg-[#161616] py-2">
+        <div className="w-full bg-[#161616] py-10">
             <div className="flex h-full my-auto justify-center space-x-12 items-center">
                 {iconsArray.map((icon: LinkType, index) => (
                     <div key={index} className="mx-2 bg-black p-3 rounded-full">
