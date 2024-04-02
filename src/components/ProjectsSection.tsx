@@ -2,7 +2,7 @@
 import React from 'react'
 import { BackgroundBeams } from './ui/background-beams';
 import projects from '../data/projects.json'
-import { HoverEffect } from './ui/card-hover-effect';
+import { ThreeDCardDemo } from './ThreeDCard';
 
 function ProjectsSection() {
     return (
@@ -11,8 +11,17 @@ function ProjectsSection() {
                 <h1 className="relative z-10 text-lg md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center mt-20 font-sans font-bold">
                     PROJECTS
                 </h1>
-                <div className='w-full mt-8'>
-                    <HoverEffect items={projects.projects} />
+                <div className='max-w-[100vw] flex p-0 sm:px-20'>
+                    <div className="flex overflow-x-auto custom-scrollbar gap-x-5 z-10">
+                        {projects.projects.map((project, index) => {
+                            return (
+                                <ThreeDCardDemo
+                                    key={project.name}
+                                    item={project}
+                                />
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
             <BackgroundBeams />

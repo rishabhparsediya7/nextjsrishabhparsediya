@@ -1,23 +1,13 @@
 "use client";
 import React from "react";
 import { SparklesCore } from "./ui/sparkles";
-import Image from "next/image";
-import { Github } from 'lucide-react';
-import { Linkedin } from 'lucide-react';
-import { Mail } from 'lucide-react';
-import Link from "next/link";
 import { LinksSection } from "./LinksSection";
 
 export function SparklesPreview() {
     return (
         <div className="h-[100vh] sm:h-[44rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
-            {/* <div className="bg-slate-700/40 flex gap-4 rounded-full px-4 py-2 mb-2">
-                <Link href='https://github.com/rishabhparsediya7' className="h-12 w-12 bg-black/40 flex items-center justify-center rounded-full"> <Github /></Link>
-                <Link href='mailto:parsediyarishabh@gmail.com' className="h-12 w-12 bg-black/40 flex items-center justify-center rounded-full"> <Mail /></Link>
-                <Link href='https://linkedin.com/in/rishabh-parsediya' className="h-12 w-12 bg-black/40 flex items-center justify-center rounded-full"> <Linkedin /></Link>
-            </div> */}
             <LinksSection />
-            <h1 className="md:text-5xl text-4xl lg:text-8xl font-bold text-center text-white relative z-20">
+            <h1 className="md:text-5xl bounce-in-top text-4xl lg:text-8xl font-bold text-center text-white relative z-20">
                 Rishabh Parsediya
             </h1>
             <div className="w-[40rem] h-40 relative">

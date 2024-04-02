@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
+import { Menu } from "./ui/navbar-menu";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
 import Image from "next/image";
@@ -17,12 +17,11 @@ export function NavbarDemo() {
 }
 
 function Navbar({ className }: { className?: string }) {
-    const [active, setActive] = useState<string | null>(null);
     return (
         <div
             className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 px-2 sm:px-0", className)}
         >
-            <Menu setActive={setActive}>
+            <Menu>
                 <div className="flex gap-4">
                     <Link className="flex text-sm sm:text-base items-center" href='#profile'>Profile</Link>
                     <Link className="flex text-sm sm:text-base items-center" href='#projects'>Projects</Link>
@@ -30,7 +29,7 @@ function Navbar({ className }: { className?: string }) {
                     <Link className="flex text-sm sm:text-base items-center" href='#contact'>Contact</Link>
                 </div>
                 <div style={{ borderRadius: '5px', overflow: 'hidden' }}>
-                    <Image src='/profile2.jpg' alt="author" width={50} height={10} className="rounded-2xl" objectFit="cover" />
+                    <Image src='/profile2.jpg' alt="author" width={50} height={10} className="rounded-2xl" />
                 </div>
             </Menu>
 
