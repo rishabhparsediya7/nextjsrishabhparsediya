@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { Menu } from "./ui/navbar-menu";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
@@ -23,10 +23,10 @@ function Navbar({ className }: { className?: string }) {
         >
             <Menu>
                 <div className="flex gap-4">
-                    <Link className="flex text-sm sm:text-base items-center" href='#profile'>Profile</Link>
-                    <Link className="flex text-sm sm:text-base items-center" href='#projects'>Projects</Link>
-                    <Link className="flex text-sm sm:text-base items-center" href='#experience'>Experience</Link>
-                    <Link className="flex text-sm sm:text-base items-center" href='#contact'>Contact</Link>
+                    <Link className="flex text-sm sm:text-base items-center text-white" href='#profile'>Profile</Link>
+                    <Link className="flex text-sm sm:text-base items-center text-white" href='#projects'>Projects</Link>
+                    <Link className="flex text-sm sm:text-base items-center text-white" href='#experience'>Experience</Link>
+                    <Link className="flex text-sm sm:text-base items-center text-white" href='#contact'>Contact</Link>
                 </div>
                 <div style={{ borderRadius: '5px', overflow: 'hidden' }}>
                     <Image src='/profile2.jpg' alt="author" width={50} height={10} className="rounded-2xl" />
