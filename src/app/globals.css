@@ -260,4 +260,35 @@ body {
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
     background: #2d2d2d;
   }
+  .glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+        0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+        0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+  .custom-cursor {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none; /* allow pointer events to pass through the custom cursor */
+    z-index: 9999; /* ensure the custom cursor stays on top */
+    transition: transform 0.1s ease; /* add smooth transition effect */
+  }
 }

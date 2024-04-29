@@ -1,14 +1,40 @@
 {
     "projects": [
         {
-            "name": "BlogVerse",
+            "name": "Expense Manager",
             "technology_used": [
-                "JavaScript",
+                "Next.js",
+                "TypeScript",
+                "APIs",
                 "MongoDB",
-                "React",
-                "Express",
                 "TailwindCSS"
             ],
+            "label": "Next.js",
+            "image": "expensemanager.avif",
+            "description": "An authenticated end to end expense manager app which lets you add your expenses and you can visualise them according to the date, according to the week and according to your expenses you have done",
+            "link": "https://homemanager.vercel.app/"
+        },
+        {
+            "name": "Flip Game",
+            "technology_used": [
+                "React.js",
+                "JavaScript"
+            ],
+            "label": "React.js",
+            "image": "flipgame.png",
+            "description": "A Flip game where you flip the boxes to match the two simultaneous symbols which should be similar",
+            "link": "https://flipgame-rishabhparsediya.netlify.app/"
+        },
+        {
+            "name": "BlogVerse",
+            "technology_used": [
+                "React.js",
+                "Express",
+                "JavaScript",
+                "MongoDB",
+                "TailwindCSS"
+            ],
+            "label": "React.js",
             "image": "blog.jpg",
             "description": "An authenticated end to end blogging website for the users where users can create blogs, share their views and will have a separate account activity restricted to only user itself, developed with MERN Stack and for Authentication, used jsonwebtoken also known as jwt and bcrypt.js",
             "link": "https://rishabhparsediyablogverse.netlify.app/"
@@ -21,6 +47,7 @@
                 "Express",
                 "MongoDB"
             ],
+            "label": "MERN",
             "image": "nutrients.jpg",
             "description": "This is a E Commerce site for the users who want to buy something from the products, it allows them to filter the products as well according to their needs and payment integration of RazorPay.",
             "link": "https://rishabhparsediyaecommerce.netlify.app/"
@@ -33,6 +60,7 @@
                 "Spring Boot",
                 "Angular"
             ],
+            "label": "React.js",
             "image": "quiz.jpg",
             "description": "A quiz app based on the react,js including 20 question with no time limit. It as a responsive app which makes it feasible for the all screens. After the quiz, you will be able to see the correct, wrong, and unattempted Q&A. Try using the link.",
             "link": "https://rishabhparsediyaquizapp.netlify.app/"
@@ -45,6 +73,7 @@
                 "TailwindCSS",
                 "CSS"
             ],
+            "label": "Next.js",
             "description": "Getting started with Next.js with a simple Todo App",
             "image": "nextjstodo.jfif",
             "link": "https://nextjs-todo-navy.vercel.app/"
@@ -58,6 +87,7 @@
                 "CSS",
                 "Firestore"
             ],
+            "label": "Python-Django",
             "description": "A Django Framework based Web App that records all the forms filled by the employees for the projects, records the companies information. It is integrated with a payment gateway that is used through RazorPay Payment Gateway. Database is used as firebase, as it is a live realtime database.",
             "image": "hrmanagement.jpg",
             "link": "#"
@@ -72,6 +102,7 @@
                 "Firestore",
                 "SQL"
             ],
+            "label": "Python-Django",
             "description": "It is a software that solves real-time problems and helps the users to get to know about their diseases and their severities. A user just has to upload an image of his her X-ray and the software is built in such a way that It can recognize its corresponding results",
             "image": "dmd.jpg",
             "link": "#"
@@ -87,6 +118,7 @@
                 "CSS",
                 "BootStrap"
             ],
+            "label": "Java-SpringBoot",
             "description": "A project based on Spring Boot, Thymeleaf and Firebase which integrates with Twilio Messaging Service used to send SMS on phone. It records all the OTP requests being made and stored them in the firebase. It holds a static JSON file which loads all the static contacts.",
             "image": "messagingapp.jpg",
             "link": "#"
@@ -99,6 +131,7 @@
                 "JPA",
                 "SQL"
             ],
+            "label": "Java-SpringBoot",
             "description": "A RestAPI project developed for the blogs. We can perform crud operations like Save the Blog, Read all the blogs, Read the blog with ID, Delete the blog with ID, And update the blog with firebase. Also, fetch the response from id and other relevant parameters.",
             "image": "restapi.jpg",
             "link": "#"
@@ -112,6 +145,7 @@
                 "BootStrap",
                 "MongoDB"
             ],
+            "label": "MERN",
             "description": "It is basic E Commerce Web App design which uploads all the pictures and the description of the products, and displays it in the frontend. The database used here is MongoDB, because of the NoSQL efficiency.",
             "image": "ecommerce.jpg",
             "link": "#"
@@ -125,6 +159,7 @@
                 "BootStrap",
                 "MongoDB"
             ],
+            "label": "Node.js",
             "description": "It is a weather app that shows the live weather of a city, whether it be temperature, humidity, pressure and other relevant parameters.",
             "image": "weatherapp.jpg",
             "link": "https://github.com/rishabhparsediya7/WeatherApp"
@@ -138,6 +173,7 @@
                 "BootStrap",
                 "MongoDB"
             ],
+            "label": "Node.js",
             "description": "News App is designed in a mobile format view, which shows all the categorical news from the different categories provided in the app. Sports, Entertainment, Music, Food, Health are the categories that are already defined. But, if one wants to search something else, that was also being introduced in the news app.",
             "image": "newsapp.jpg",
             "link": "https://github.com/rishabhparsediya7/News_App"
@@ -149,6 +185,7 @@
                 "React.js",
                 "TypeScript"
             ],
+            "label": "Next.js",
             "description": "A self portfolio developed by myself on Next.js. You can reach out to me in the contacts section. You can share the number or email, I will get back to you.",
             "image": "portfolio.PNG",
             "link": "/"

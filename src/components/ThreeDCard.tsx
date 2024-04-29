@@ -12,17 +12,23 @@ export function ThreeDCardDemo({ item }: {
         image: string,
         description: string,
         link: string
+        label: string
     }
 }) {
     return (
         <CardContainer className="inter-var">
             <CardBody className="relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2] w-[100vw] sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-                <CardItem
-                    translateZ="50"
-                    className="text-xl font-bold text-white"
-                >
-                    {item.name}
-                </CardItem>
+                <div className="flex justify-between mb-4">
+                    <CardItem
+                        translateZ="50"
+                        className="text-xl font-bold text-white"
+                    >
+                        {item.name}
+                    </CardItem>
+                    <div className="bg-white flex justify-center items-center text-black rounded-2xl px-3 text-[12px] py-1">
+                        <p className="m-auto">{item.label}</p>
+                    </div>
+                </div>
                 <CardItem
                     as="p"
                     translateZ="60"
@@ -33,8 +39,8 @@ export function ThreeDCardDemo({ item }: {
                 <CardItem translateZ="100" className="w-full mt-4">
                     <Image
                         src={`/${item.image}`}
-                        height="1000"
-                        width="1000"
+                        height={500}
+                        width={500}
                         className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
                         alt="thumbnail"
                     />
