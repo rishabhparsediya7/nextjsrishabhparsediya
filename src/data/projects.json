@@ -15,6 +15,32 @@
             "link": "https://homemanager.vercel.app/"
         },
         {
+            "name": "🐫 Jeera Board",
+            "technology_used": [
+                "Next.js",
+                "TypeScript",
+                "Drag&Drop",
+                "TailwindCSS"
+            ],
+            "label": "Next.js",
+            "image": "jeeraboard.JPG",
+            "description": "A prototype clone for Jeera Board, showing drag and drop functionality and some ui designs, where we can add some tickets and view them and change the status for each of it by dragging and dropping.",
+            "link": "https://jeeeraboard.vercel.app/"
+        },
+        {
+            "name": "Weather App Next.js",
+            "technology_used": [
+                "Next.js",
+                "TypeScript",
+                "OpenWeatherApi",
+                "TailwindCSS"
+            ],
+            "label": "Next.js",
+            "image": "weathernext.JPG",
+            "description": "An inso design from the dribble architecting into live visuals showing the real weather using the apis from OpenWeather.",
+            "link": "https://nextjs-weather-rishabh.vercel.app/"
+        },
+        {
             "name": "Flip Game",
             "technology_used": [
                 "React.js",
