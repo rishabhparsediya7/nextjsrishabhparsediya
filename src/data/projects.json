@@ -25,7 +25,7 @@
             "label": "Next.js",
             "image": "jeeraboard.JPG",
             "description": "A prototype clone for Jeera Board, showing drag and drop functionality and some ui designs, where we can add some tickets and view them and change the status for each of it by dragging and dropping.",
-            "link": "https://jeeeraboard.vercel.app/"
+            "link": "https://jeeeraboard.netlify.app/"
         },
         {
             "name": "Weather App Next.js",
