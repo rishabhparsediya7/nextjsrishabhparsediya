@@ -59,7 +59,6 @@ export const StickyScroll = ({
             ref={ref}
         >
             <div className="relative flex flex-col items-start px-4">
-                <h1 className="text-center mx-auto uppercase text-5xl sm:text-7xl">Experience</h1>
                 <div className="max-w-2xl">
                     {content.map((item, index) => (
                         <div key={item.title + index} className="my-20">
