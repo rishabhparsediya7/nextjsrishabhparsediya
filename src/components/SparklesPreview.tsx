@@ -18,10 +18,9 @@ export function SparklesPreview() {
                 start: "bottom 110%",
                 end: "bottom 0%",
                 scrub: 4,
-                pin: true
             }
         })
-    })
+    },[])
     return (
         <div id="author-section" className="h-[100vh] sm:h-[44rem] w-full bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md">
             <LinksSection />
