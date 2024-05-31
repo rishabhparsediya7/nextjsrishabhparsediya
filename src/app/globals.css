@@ -291,4 +291,19 @@ body {
     z-index: 9999; /* ensure the custom cursor stays on top */
     transition: transform 0.1s ease; /* add smooth transition effect */
   }
+  .ellipsis {
+    display: -webkit-box;
+    max-width: fit-content;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #project-heading {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .char {
+    transform: translateY(-190px);
+    transition: transform 0.5s;
+  }
 }

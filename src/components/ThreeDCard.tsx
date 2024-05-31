@@ -17,7 +17,7 @@ export function ThreeDCardDemo({ item }: {
 }) {
     return (
         <CardContainer className="inter-var">
-            <CardBody className="relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2] w-[100vw] sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+            <CardBody className="relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2] w-[100vw] sm:w-[30rem] h-[80vh] rounded-xl p-6 border  ">
                 <div className="flex justify-between mb-4">
                     <CardItem
                         translateZ="50"
@@ -25,14 +25,14 @@ export function ThreeDCardDemo({ item }: {
                     >
                         {item.name}
                     </CardItem>
-                    <div className="bg-white flex justify-center items-center text-black rounded-2xl px-3 text-[12px] py-1">
-                        <p className="m-auto">{item.label}</p>
+                    <div className="bg-white flex justify-center max-h-7 items-center text-black rounded-2xl px-3 text-[12px] py-1">
+                        <a target="_blank" href={item.link} className="m-auto">Visit now →</a>
                     </div>
                 </div>
                 <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-sm max-w-sm tracking-wide mt-2 text-neutral-300"
+                    className="text-sm max-w-sm ellipsis tracking-wide mt-2 text-neutral-300"
                 >
                     {item.description}
                 </CardItem>
@@ -50,18 +50,9 @@ export function ThreeDCardDemo({ item }: {
                         "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm flex flex-wrap gap-2"}>
                         {
                             item.technology_used.map((tech) =>
-                                <p className="bg-slate-800 rounded-md p-1" key={tech}>{tech}</p>
+                                <p className={`bg-slate-800 text-[12px] rounded-xl px-4 py-1 ${tech === item.label && `bg-white text-slate-800`}`} key={tech}>{tech}</p>
                             )
                         }
-                    </CardItem>
-                    <CardItem
-                        translateZ={20}
-                        as={Link}
-                        href={item.link}
-                        target="__blank"
-                        className="px-4 py-2 bg-white/10 mt-10 rounded-xl text-xs text-left font-normal text-white"
-                    >
-                        Visit now →
                     </CardItem>
                 </div>
             </CardBody>

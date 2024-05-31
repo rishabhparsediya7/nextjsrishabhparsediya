@@ -82,9 +82,9 @@
             "name": "React Quiz App",
             "created_at": "2024-01-10",
             "technology_used": [
-                "Java",
-                "Spring Boot",
-                "Angular"
+                "React.js",
+                "Redux",
+                "Context APIs"
             ],
             "label": "React.js",
             "image": "quiz.jpg",
@@ -107,7 +107,7 @@
         {
             "name": "HR Management Systems",
             "technology_used": [
-                "Python",
+                "Python-Django",
                 "Django",
                 "HTML",
                 "CSS",
@@ -122,7 +122,7 @@
             "name": "Digital Medical Diagnosis",
             "technology_used": [
                 "Python",
-                "Django",
+                "Python-Django",
                 "HTML",
                 "CSS",
                 "Firestore",
@@ -136,7 +136,7 @@
         {
             "name": "Java Spring Boot Messaging Application",
             "technology_used": [
-                "Java",
+                "Java-SpringBoot",
                 "Spring Boot",
                 "Thymeleaf",
                 "Firebase",
@@ -157,7 +157,7 @@
                 "JPA",
                 "SQL"
             ],
-            "label": "Java-SpringBoot",
+            "label": "Java",
             "description": "A RestAPI project developed for the blogs. We can perform crud operations like Save the Blog, Read all the blogs, Read the blog with ID, Delete the blog with ID, And update the blog with firebase. Also, fetch the response from id and other relevant parameters.",
             "image": "restapi.jpg",
             "link": "#"
@@ -165,6 +165,7 @@
         {
             "name": "E Commerce Web App",
             "technology_used": [
+                "MERN",
                 "Node.js",
                 "HTML",
                 "CSS",
