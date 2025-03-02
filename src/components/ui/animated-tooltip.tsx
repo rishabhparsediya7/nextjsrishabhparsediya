@@ -17,7 +17,7 @@ export const AnimatedTooltip = ({
     id: number;
     name: string;
     designation: string;
-    link: string,
+    link: string;
     image: string;
   }[];
 }) => {
@@ -43,7 +43,7 @@ export const AnimatedTooltip = ({
     <>
       {items.map((item, idx) => (
         <div
-          className="-mr-4 relative group bg-black"
+          className="mr-2 relative group bg-black"
           key={item.id}
           onMouseEnter={() => setHoveredIndex(item.id)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -79,16 +79,17 @@ export const AnimatedTooltip = ({
           )}
           <div className="rounded-full h-14 p-3 w-14 border-2 border-white">
             <Link target="_blank" href={item.link}>
-            <Image
-              onMouseMove={handleMouseMove}
-              height={50}
-              width={50}
-              src={item.image}
-              alt={item.name}
-              className="object-cover !m-0 !p-0 object-top group-hover:scale-105 group-hover:z-30 relative transition duration-500"
-            /></Link>
+              <Image
+                onMouseMove={handleMouseMove}
+                height={50}
+                width={50}
+                src={item.image}
+                alt={item.name}
+                className="object-cover !m-0 !p-0 object-top group-hover:scale-105 group-hover:z-30 relative transition duration-500"
+              />
+            </Link>
+          </div>
         </div>
-        </div >
       ))}
     </>
   );
