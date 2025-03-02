@@ -40,7 +40,7 @@ export const AnimatedTooltip = ({
   };
 
   return (
-    <>
+    <div className="flex flex-row items-center justify-center mt-40">
       {items.map((item, idx) => (
         <div
           className="mr-1 relative group bg-white dark:bg-black"
@@ -93,6 +93,6 @@ export const AnimatedTooltip = ({
           </div>
         </div>
       ))}
-    </>
+    </div>
   );
 };

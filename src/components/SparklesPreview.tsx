@@ -31,12 +31,24 @@ export function SparklesPreview() {
       className="h-[100vh] sm:h-[44rem] w-full bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md"
     >
       <LinksSection />
-      <h1
-        id="author"
-        className="md:text-5xl bounce-in-top text-4xl lg:text-8xl font-bold text-center text-black relative z-20 dark:text-white"
-      >
-        Rishabh Parsediya
-      </h1>
+      <div className="text-center space-y-4 relative z-20">
+        <h1
+          id="author"
+          className="md:text-5xl bounce-in-top text-4xl lg:text-8xl font-bold text-black dark:text-white"
+        >
+          Rishabh Parsediya
+        </h1>
+        <p className="text-lg md:text-xl font-medium text-gray-800 dark:text-gray-200">
+          I turn ideas into functional, scalable, and elegant digital solutions.
+        </p>
+        <p className="text-sm md:text-base text-gray-600 dark:text-gray-400">
+          Passionate Developer | Problem Solver | Tech Enthusiast
+        </p>
+        <p className="text-sm md:text-base font-medium text-indigo-600 dark:text-white">
+          Code. Create. Innovate. Deliver.
+        </p>
+      </div>
+
       <div className="w-[40rem] h-40 relative">
         {theme === "light" && (
           <>
