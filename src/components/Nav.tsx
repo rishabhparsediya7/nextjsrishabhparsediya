@@ -8,9 +8,8 @@ import { ThemeToggle } from "./ThemeToggle";
 
 export function NavbarDemo() {
   return (
-    <div className="relative w-full flex items-center justify-center dark:bg-black">
+    <div className="relative w-full flex items-center justify-center bg-white dark:bg-black">
       <Navbar className="top-2" />
-      <p className="text-black dark:text-white">.</p>
       <ThemeToggle />
     </div>
   );
@@ -27,37 +26,37 @@ function Navbar({ className }: { className?: string }) {
       <Menu>
         <div className="flex gap-4">
           <Link
-            className="flex text-sm sm:text-base items-center text-white"
+            className="flex text-sm sm:text-base items-center text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
             href="/#profile"
           >
             Profile
           </Link>
           <Link
-            className="flex text-sm sm:text-base items-center text-white"
+            className="flex text-sm sm:text-base items-center text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
             href="/#projects"
           >
             Projects
           </Link>
           <Link
-            className="flex text-sm sm:text-base items-center text-white"
+            className="flex text-sm sm:text-base items-center text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
             href="/#experience"
           >
             Experience
           </Link>
           <Link
-            className="flex text-sm sm:text-base items-center text-white"
+            className="flex text-sm sm:text-base items-center text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
             href="/#contact"
           >
             Contact
           </Link>
         </div>
-        <div style={{ borderRadius: "5px", overflow: "hidden" }}>
+        <div className="rounded-2xl overflow-hidden">
           <Image
             src="/profile2.jpg"
             alt="author"
             width={50}
             height={10}
-            className="rounded-2xl"
+            className="rounded-2xl hover:scale-110 transition-transform duration-200"
           />
         </div>
       </Menu>
