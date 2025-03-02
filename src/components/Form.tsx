@@ -5,13 +5,14 @@ import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Loader from "./ui/loader";
-
+import { useTheme } from "@/context/ThemeProvider";
 type ErrorFields = {
   name: string;
   message: string;
 };
 
 export function Form() {
+  const { theme } = useTheme();
   const [name, setName] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [errors, setErrors] = useState<ErrorFields>({ name: "", message: "" });
@@ -73,9 +74,7 @@ export function Form() {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme={
-          document.documentElement.classList.contains("dark") ? "dark" : "light"
-        }
+        theme={theme === "dark" ? "dark" : "light"}
       />
       <form onSubmit={handleSubmit} className="flex flex-1 flex-col gap-y-6">
         <div className="w-full flex flex-col gap-y-2">
