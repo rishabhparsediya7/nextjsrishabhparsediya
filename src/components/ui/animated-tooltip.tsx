@@ -43,7 +43,7 @@ export const AnimatedTooltip = ({
     <>
       {items.map((item, idx) => (
         <div
-          className="mr-2 relative group bg-black"
+          className="mr-2 relative group bg-white dark:bg-black"
           key={item.id}
           onMouseEnter={() => setHoveredIndex(item.id)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -67,17 +67,19 @@ export const AnimatedTooltip = ({
                 rotate: rotate,
                 whiteSpace: "nowrap",
               }}
-              className="absolute -top-16 -left-1/2 translate-x-1/2 flex text-xs flex-col items-center justify-center rounded-md bg-black z-50 shadow-xl px-4 py-2"
+              className="absolute -top-16 -left-1/2 translate-x-1/2 flex text-xs flex-col items-center justify-center rounded-md bg-white dark:bg-black z-50 shadow-lg dark:shadow-white/10 px-4 py-2"
             >
               <div className="absolute inset-x-10 z-30 w-[20%] -bottom-px bg-gradient-to-r from-transparent via-emerald-500 to-transparent h-px " />
               <div className="absolute left-10 w-[40%] z-30 -bottom-px bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px " />
-              <div className="font-bold text-white relative z-30 text-base">
+              <div className="font-bold text-black dark:text-white relative z-30 text-base">
                 {item.name}
               </div>
-              <div className="text-white text-xs">{item.designation}</div>
+              <div className="text-black dark:text-white text-xs">
+                {item.designation}
+              </div>
             </motion.div>
           )}
-          <div className="rounded-full h-14 p-3 w-14 border-2 border-white">
+          <div className="rounded-full h-14 p-3 w-14 border-2 border-black/20 dark:border-white/20 hover:border-black/50 dark:hover:border-white/50 transition-colors">
             <Link target="_blank" href={item.link}>
               <Image
                 onMouseMove={handleMouseMove}
@@ -85,7 +87,7 @@ export const AnimatedTooltip = ({
                 width={50}
                 src={item.image}
                 alt={item.name}
-                className="object-cover !m-0 !p-0 object-top group-hover:scale-105 group-hover:z-30 relative transition duration-500"
+                className="object-cover !m-0 !p-0 object-top group-hover:scale-105 group-hover:z-30 relative transition duration-500 grayscale brightness-0 dark:brightness-200 hover:grayscale-0 hover:brightness-100 dark:hover:brightness-100"
               />
             </Link>
           </div>
