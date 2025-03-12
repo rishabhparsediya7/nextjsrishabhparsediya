@@ -1,12 +1,11 @@
 "use client";
-import React, { useEffect } from "react";
-import { BackgroundBeams } from "./ui/background-beams";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect } from "react";
+import SplitType from "split-type";
 import projects from "../data/projects.json";
 import { ThreeDCardDemo } from "./ThreeDCard";
-import gsap from "gsap";
-import SplitType from "split-type";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
+import { BackgroundBeams } from "./ui/background-beams";
 gsap.registerPlugin(ScrollTrigger);
 
 function ProjectsSection() {
@@ -43,7 +42,7 @@ function ProjectsSection() {
           PROJECTS
         </div>
         <div className="max-w-[100vw] flex sm:px-20 relative mt-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 content-stretch items-start md:grid-cols-3 gap-5 z-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 content-stretch items-start  gap-5 z-10">
             {projects.projects.map((project, index) => {
               return <ThreeDCardDemo key={project.name} item={project} />;
             })}
