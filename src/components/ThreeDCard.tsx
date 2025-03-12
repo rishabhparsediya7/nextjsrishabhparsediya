@@ -24,21 +24,26 @@ export function ThreeDCardDemo({
                 hover:shadow-2xl hover:shadow-emerald-500/[0.1] 
                 bg-white dark:bg-black 
                 border-black/[0.2] dark:border-white/[0.2] 
-                w-[100vw] sm:w-[30rem] h-[80vh] 
+                w-[100vw] sm:w-[30rem] h-auto 
                 rounded-xl p-6 border"
       >
         <div className="flex justify-between mb-4">
           <CardItem
             translateZ="50"
-            className="text-xl font-bold text-black dark:text-white"
+            className="text-lg md:text-sm max-h-10 min-h-10 font-bold text-black dark:text-white"
           >
             {item.name}
           </CardItem>
-          <div className="bg-black dark:bg-white flex justify-center max-h-7 items-center text-white dark:text-black rounded-2xl px-3 text-[12px] py-1 hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors">
-            <a target="_blank" href={item.link} className="m-auto">
+
+          <a
+            className="bg-black dark:bg-white flex justify-center max-h-7 items-center text-white dark:text-black rounded-2xl px-3 text-[12px] py-1 hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
+            target="_blank"
+            href={item.link}
+          >
+            <p className="justify-center md:min-w-10 min-w-20 flex items-center flex-col">
               Visit now →
-            </a>
-          </div>
+            </p>
+          </a>
         </div>
         <CardItem
           as="p"
