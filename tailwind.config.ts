@@ -29,6 +29,15 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      keyframes: {
+        soundbar: {
+          "0%, 100%": { height: "0.5rem" },
+          "50%": { height: "1.5rem" },
+        },
+      },
+      animation: {
+        soundbar: "soundbar 0.5s ease-in-out infinite alternate",
+      },
     },
   },
   plugins: [addVariablesForColors],
