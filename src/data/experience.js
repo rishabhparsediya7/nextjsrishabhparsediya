@@ -10,13 +10,13 @@ export const content = [
           intersection of technology and innovation in the retail industry. As a
           Full Stack Developer, I have played a key role in building and
           optimizing scalable applications that empower brands, distributors,
-          and retailers across India.",
+          and retailers across India.
         </p>
         <ul className="list-none space-y-2">
           <li className="flex items-start">
             <span className="text-green-500 mr-2">✔</span>
             <span className="text-gray-600 dark:text-slate-300 text-justify">
-              <strong>Developing Scalable Applications</strong> – Designing &
+              <strong>Developing Scalable Applications</strong> Designing &
               implementing high-performance web & mobile applications using
               React, React Native, Node.js, Hasura, and GraphQL.
             </span>
@@ -24,7 +24,7 @@ export const content = [
           <li className="flex items-start">
             <span className="text-green-500 mr-2">✔</span>
             <span className="text-gray-600 dark:text-slate-300 text-justify">
-              <strong>Optimizing Backend Systems</strong> – Improving data flow,
+              <strong>Optimizing Backend Systems</strong> Improving data flow,
               API performance, and system architecture to handle high traffic
               and transactions efficiently.
             </span>
@@ -32,14 +32,14 @@ export const content = [
           <li className="flex items-start">
             <span className="text-green-500 mr-2">✔</span>
             <span className="text-gray-600 dark:text-slate-300 text-justify">
-              <strong>Enhancing User Experience</strong> – Building responsive
-              and user-friendly interfaces to improve engagement and usability.
+              <strong>Enhancing User Experience</strong> Building responsive and
+              user-friendly interfaces to improve engagement and usability.
             </span>
           </li>
           <li className="flex items-start">
             <span className="text-green-500 mr-2">✔</span>
             <span className="text-gray-600 dark:text-slate-300 text-justify">
-              <strong>Solving Real-World Challenges</strong> – Developing
+              <strong>Solving Real-World Challenges</strong> Developing
               tech-driven solutions to streamline operations for 500,000+
               retailers, 7,000+ distributors, and 1,000+ brands.
             </span>
@@ -47,8 +47,8 @@ export const content = [
           <li className="flex items-start">
             <span className="text-green-500 mr-2">✔</span>
             <span className="text-gray-600 dark:text-slate-300 text-justify">
-              <strong>Continuous Learning & Growth</strong> – Collaborating with
-              a talented team, adopting new technologies, and growing both
+              <strong>Continuous Learning & Growth</strong> Collaborating with a
+              talented team, adopting new technologies, and growing both
               technically and professionally.
             </span>
           </li>
