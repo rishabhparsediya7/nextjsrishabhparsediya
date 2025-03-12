@@ -2,10 +2,10 @@
 import { ContactForm } from "@/components/ContactForm";
 import { ExperienceSection } from "@/components/ExperienceSection";
 import { Footer } from "@/components/Footer";
+import GithubContributor from "@/components/GithubContributor";
 import { NavbarDemo } from "@/components/Nav";
 import ProfileSection from "@/components/ProfileSection";
 import ProjectsSection from "@/components/ProjectsSection";
-import { useTheme } from "@/context/ThemeProvider";
 
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
       <ProfileSection />
       <ProjectsSection />
       <ExperienceSection />
+      <GithubContributor />
       <ContactForm />
       <Footer />
     </main>
