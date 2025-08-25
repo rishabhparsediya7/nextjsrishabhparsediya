@@ -6,7 +6,6 @@ import GithubContributor from "@/components/GithubContributor";
 import { NavbarDemo } from "@/components/Nav";
 import ProfileSection from "@/components/ProfileSection";
 import ProjectsSection from "@/components/ProjectsSection";
-import SpotifyPlayer from "@/components/SpotifyPlayer";
 
 export default function Home() {
   return (
@@ -16,7 +15,6 @@ export default function Home() {
       <ProjectsSection />
       <ExperienceSection />
       <GithubContributor />
-      <SpotifyPlayer />
       <ContactForm />
       <Footer />
     </main>
