@@ -12,13 +12,14 @@ type ThemeContextType = {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>("light");
+  const [theme, setTheme] = useState<Theme>("dark");
 
   useEffect(() => {
-    // Always start with light theme
-    setTheme("light");
-    document.documentElement.classList.remove("dark");
-    localStorage.setItem("theme", "light");
+    // Set dark theme by default
+    setTheme("dark");
+    document.documentElement.classList.add("dark");
+    document.documentElement.classList.remove("light");
+    localStorage.setItem("theme", "dark");
   }, []);
 
   const toggleTheme = () => {

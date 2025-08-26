@@ -10,7 +10,7 @@ export function NavbarDemo() {
   return (
     <div className="relative w-full flex items-center justify-center bg-white dark:bg-black">
       <Navbar className="top-2" />
-      <ThemeToggle />
+      {/* <ThemeToggle /> */}
     </div>
   );
 }
