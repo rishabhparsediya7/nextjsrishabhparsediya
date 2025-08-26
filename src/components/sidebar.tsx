@@ -17,6 +17,7 @@ import {
 import { GoArrowUpRight } from "react-icons/go";
 
 import Image from "next/image";
+import { FaProjectDiagram } from "react-icons/fa";
 type NavItem = {
   name: string;
   path: string;
@@ -29,9 +30,9 @@ const navItems: NavItem[] = [
   {
     name: "Projects",
     path: "/projects",
-    icon: <FiBriefcase />,
+    icon: <FaProjectDiagram />,
   },
-  { name: "Resume", path: "/resume", icon: <FiFileText /> },
+  { name: "Experience", path: "/experience", icon: <FiBriefcase /> },
   { name: "Contact", path: "/contact", icon: <FiMail /> },
 ];
 
