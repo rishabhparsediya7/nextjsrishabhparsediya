@@ -1,9 +1,24 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { FaReact, FaNodeJs, FaDocker, FaAws, FaGitAlt } from 'react-icons/fa';
-import { SiNextdotjs, SiTypescript, SiPostgresql, SiMongodb, SiRedis, SiGraphql, SiTailwindcss, SiPrisma } from 'react-icons/si';
-import { TbBrandReactNative } from 'react-icons/tb';
+import React from 'react';
+import { motion, LazyMotion, domAnimation } from 'framer-motion';
+import dynamic from 'next/dynamic';
+
+// Lazy load icons
+const FaReact = dynamic(() => import('react-icons/fa').then(mod => mod.FaReact), { ssr: false });
+const FaNodeJs = dynamic(() => import('react-icons/fa').then(mod => mod.FaNodeJs), { ssr: false });
+const FaDocker = dynamic(() => import('react-icons/fa').then(mod => mod.FaDocker), { ssr: false });
+const FaAws = dynamic(() => import('react-icons/fa').then(mod => mod.FaAws), { ssr: false });
+const FaGitAlt = dynamic(() => import('react-icons/fa').then(mod => mod.FaGitAlt), { ssr: false });
+const SiNextdotjs = dynamic(() => import('react-icons/si').then(mod => mod.SiNextdotjs), { ssr: false });
+const SiTypescript = dynamic(() => import('react-icons/si').then(mod => mod.SiTypescript), { ssr: false });
+const SiPostgresql = dynamic(() => import('react-icons/si').then(mod => mod.SiPostgresql), { ssr: false });
+const SiMongodb = dynamic(() => import('react-icons/si').then(mod => mod.SiMongodb), { ssr: false });
+const SiRedis = dynamic(() => import('react-icons/si').then(mod => mod.SiRedis), { ssr: false });
+const SiGraphql = dynamic(() => import('react-icons/si').then(mod => mod.SiGraphql), { ssr: false });
+const SiTailwindcss = dynamic(() => import('react-icons/si').then(mod => mod.SiTailwindcss), { ssr: false });
+const SiPrisma = dynamic(() => import('react-icons/si').then(mod => mod.SiPrisma), { ssr: false });
+const TbBrandReactNative = dynamic(() => import('react-icons/tb').then(mod => mod.TbBrandReactNative), { ssr: false });
 
 const techCategories = [
   {
@@ -68,9 +83,11 @@ const item = {
   }
 };
 
-const TechCard = ({ name, icon, custom = false }: { name: string; icon: React.ReactNode; custom?: boolean }) => (
+const TechCard = React.memo(({ name, icon, custom = false }: { name: string; icon: React.ReactNode; custom?: boolean }) => (
   <motion.div
     variants={item}
+    initial="hidden"
+    animate="show"
     whileHover={{ 
       scale: 1.05,
       y: -5,
@@ -92,7 +109,7 @@ const TechCard = ({ name, icon, custom = false }: { name: string; icon: React.Re
     </div>
     <span className="text-sm font-thin text-gray-700 dark:text-gray-200">{name}</span>
   </motion.div>
-);
+));
 
 const TechStack = () => {
   return (
@@ -107,6 +124,8 @@ const TechStack = () => {
           <h1 className="text-2xl font-thin text-gray-900 dark:text-white mb-1">Tech Stack</h1>
           <p className="text-sm font-thin text-gray-600 dark:text-gray-300">Here is a list of the tech that powers my projects</p>
         </motion.div>
+        
+        <LazyMotion features={domAnimation}>
 
         <div className="flex flex-col gap-2">
           {techCategories.map((category, index) => (
@@ -145,6 +164,7 @@ const TechStack = () => {
             </motion.div>
           ))}
         </div>
+        </LazyMotion>
       </div>
     </div>
   );
