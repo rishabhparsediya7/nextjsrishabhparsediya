@@ -39,17 +39,17 @@ const navItems: NavItem[] = [
 const socialLinks = [
   {
     name: "GitHub",
-    url: "https://github.com/yourusername",
+    url: "https://github.com/rishabhparsediya7",
     icon: <FiGithub />,
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/yourusername",
+    url: "https://linkedin.com/in/rishabh-parsediya",
     icon: <FiLinkedin />,
   },
   {
     name: "X (Twitter)",
-    url: "https://twitter.com/yourusername",
+    url: "https://x.com/RishabhParsedi1",
     icon: <FiX />,
   },
 ];
