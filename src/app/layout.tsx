@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/context/ThemeProvider";
+import { LoadingProvider, useLoading } from "@/context/LoadingContext";
+import LoadingSpinner from "@/components/LoadingSpinner";
 import Sidebar from "@/components/sidebar";
 
 const nunito = Nunito_Sans({ 
@@ -25,9 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ThemeProvider>
-        <body
-          className={`${nunito.className}`}
-        >
+        <LoadingProvider>
+          <body className={`${nunito.className} relative min-h-screen`}>
+            <LoadingSpinner />
           <div className="flex min-h-screen">
             <div className="hidden md:block md:w-64 flex-shrink-0">
               <div id="sidebar-portal" className="h-full">
@@ -43,7 +45,8 @@ export default function RootLayout({
               </div>
             </main>
           </div>
-        </body>
+          </body>
+        </LoadingProvider>
       </ThemeProvider>
     </html>
   );
