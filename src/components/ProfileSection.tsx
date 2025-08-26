@@ -38,7 +38,7 @@ function ProfileSection() {
           className="text-sm leading-relaxed text-gray-800 dark:text-gray-200"
           variants={item}
         >
-          Hi there 👋 <br /> I'm a Full Stack Developer with 3+ years of
+          Hi there 👋 <br /> I&apos;m a Full Stack Developer with 3+ years of
           experience building scalable and user-friendly digital products. I
           enjoy working across the stack — from crafting seamless front-end
           experiences with React and React Native, to designing robust back-end
@@ -50,8 +50,8 @@ function ProfileSection() {
           variants={item}
         >
           My focus is on writing clean, maintainable, and performant code while
-          solving real-world problems. I'm especially passionate about building
-          products that make people's lives easier.
+          solving real-world problems. I&apos;m especially passionate about building
+          products that make people&apos;s lives easier.
         </motion.p>
         
         <motion.p 

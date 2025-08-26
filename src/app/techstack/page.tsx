@@ -111,6 +111,8 @@ const TechCard = React.memo(({ name, icon, custom = false }: { name: string; ico
   </motion.div>
 ));
 
+TechCard.displayName = 'TechCard';
+
 const TechStack = () => {
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">

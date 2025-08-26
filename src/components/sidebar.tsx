@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import {
   FiBriefcase,
-  FiFileText,
   FiGithub,
   FiHome,
   FiLinkedin,
@@ -97,10 +96,18 @@ const Sidebar = () => {
               root.unmount();
             };
           })
-          .catch(() => {
-            import("react-dom").then((ReactDOM) => {
-              ReactDOM.render(<MobileMenuButton />, mobileButton);
-            });
+          .catch((error) => {
+            console.error("Failed to load react-dom/client:", error);
+            // Fallback to document.createElement if needed
+            const button = document.createElement('div');
+            button.className = 'md:hidden fixed bottom-4 right-4 z-50';
+            document.body.appendChild(button);
+            
+            import("react-dom/client")
+              .then(({ createRoot }) => {
+                const fallbackRoot = createRoot(button);
+                fallbackRoot.render(<MobileMenuButton />);
+              });
           });
       }
     }
