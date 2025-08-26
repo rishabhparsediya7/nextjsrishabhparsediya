@@ -25,7 +25,7 @@ type NavItem = {
 
 const navItems: NavItem[] = [
   { name: "Home", path: "/", icon: <FiHome /> },
-  { name: "About", path: "/about", icon: <FiUser /> },
+  { name: "Tech Stack", path: "/techstack", icon: <FiUser /> },
   {
     name: "Projects",
     path: "/projects",
@@ -106,6 +106,8 @@ const Sidebar = () => {
 
   if (!mounted) return null;
 
+  const isActive = (path: string) => pathname === path;
+
   return (
     <>
       <div
@@ -143,9 +145,9 @@ const Sidebar = () => {
                 <li key={item.path}>
                   <Link
                     href={item.path}
-                    className={`flex items-center justify-between w-full px-2 py-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-[#121212] transition-colors text-[8px] sm:text-sm`}
+                    className={`flex items-center justify-between w-full px-2 py-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-[#121212] transition-colors text-[8px] sm:text-sm ${isActive(item.path) ? "bg-gray-200 dark:bg-[#121212]" : ""}`}
                   >
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2"> 
                       <span className="w-4 flex-shrink-0">{item.icon}</span>
                       <span className="font-thin">{item.name}</span>
                     </div>
