@@ -1,6 +1,6 @@
 "use client";
 import projects from "../data/projects.json";
-import { ThreeDCardDemo } from "./ThreeDCard";
+import { ProjectCard } from "./ProjectCard";
 import { BackgroundBeams } from "./ui/background-beams";
 
 function ProjectsSection() {
@@ -10,7 +10,7 @@ function ProjectsSection() {
         <div className="flex relative">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 content-stretch items-start  gap-5 z-10">
             {projects.projects.map((project) => {
-              return <ThreeDCardDemo key={project.name} item={project} />;
+              return <ProjectCard key={project.name} item={project} />;
             })}
           </div>
         </div>
