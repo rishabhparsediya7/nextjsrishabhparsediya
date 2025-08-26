@@ -33,6 +33,7 @@ const navItems: NavItem[] = [
     icon: <FaProjectDiagram />,
   },
   { name: "Experience", path: "/experience", icon: <FiBriefcase /> },
+  { name: "Github Highlights", path: "/github", icon: <FiUser /> },
   { name: "Contact", path: "/contact", icon: <FiMail /> },
 ];
 
