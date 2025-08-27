@@ -154,7 +154,7 @@ const Sidebar = () => {
                 <li key={item.path}>
                   <Link
                     href={item.path}
-                    className={`flex items-center justify-between w-full px-2 py-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-[#121212] transition-colors text-[8px] text-sm md:text-md ${isActive(item.path) ? "bg-gray-200 dark:bg-[#121212]" : ""}`}
+                    className={`flex items-center justify-between w-full px-2 py-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-[#121212] transition-colors text-[8px] text-sm ${isActive(item.path) ? "bg-gray-200 dark:bg-[#121212]" : ""}`}
                   >
                     <div className="flex items-center gap-2"> 
                       <span className="w-4 flex-shrink-0">{item.icon}</span>
@@ -178,11 +178,11 @@ const Sidebar = () => {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center text-[8px] text-sm md:text-md justify-between gap-2 text-gray-500 dark:text-gray-400  transition-colors text-xs w-full"
+                      className="flex items-center text-[8px] text-sm justify-between gap-2 text-gray-500 dark:text-gray-400  transition-colors w-full"
                     >
                       <div className="flex items-center gap-2">
                         <span className="w-4 flex-shrink-0">{social.icon}</span>
-                        <span className="font-thin text-[8px] text-sm md:text-md">
+                        <span className="font-thin text-[8px] text-sm">
                           {social.name}
                         </span>
                       </div>
