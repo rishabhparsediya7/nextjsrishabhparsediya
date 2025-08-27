@@ -55,6 +55,10 @@ const techStackCards = [
 ];
 
 function ProfileSection() {
+  const joinedDate = new Date("2022-02-17T00:00:00");
+  const today = new Date();
+  const diffTime = Math.abs(today.getTime() - joinedDate.getTime());
+  const diffDays = (diffTime / (1000 * 60 * 60 * 24 * 365)).toFixed(1);
   return (
     <div className="w-full min-h-screen flex flex-col items-center py-8 md:py-12 px-4">
       <motion.div
@@ -75,7 +79,7 @@ function ProfileSection() {
             className="text-md leading-relaxed text-gray-400 dark:text-gray-200"
             variants={item}
           >
-            Hi there 👋 I&apos;m a Full Stack Developer with 3+ years of
+            Hi there 👋 I&apos;m a Full Stack Developer with {diffDays} years of
             experience building scalable and user-friendly digital products. I
             enjoy working across the stack — from crafting seamless front-end
             experiences with React and React Native, to designing robust
@@ -94,7 +98,7 @@ function ProfileSection() {
       </motion.div>
 
       <motion.div
-        className="max-w-5xl absolute top-[50%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-4"
+        className="max-w-5xl sm:absolute top-[50%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-4"
         variants={container}
         initial="hidden"
         animate="show"
@@ -139,7 +143,7 @@ function ProfileSection() {
         </motion.div>
 
         <motion.div
-          className="flex max-w-3xl flex-col justify-center"
+          className="hidden sm:flex max-w-3xl flex-col justify-center"
           variants={item}
         >
           <StackedCards cards={techStackCards} />
