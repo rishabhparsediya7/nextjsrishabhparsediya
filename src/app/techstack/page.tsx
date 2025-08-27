@@ -107,7 +107,7 @@ const TechCard = React.memo(({ name, icon, custom = false }: { name: string; ico
     <div className={`${custom ? 'text-3xl' : ''} mb-2`}>
       {icon}
     </div>
-    <span className="text-sm font-thin text-gray-700 dark:text-gray-200">{name}</span>
+    <span className="text-md md:text-md font-thin text-gray-700 dark:text-gray-200">{name}</span>
   </motion.div>
 ));
 
@@ -124,7 +124,7 @@ const TechStack = () => {
           className="mb-6 pl-6"
         >
           <h1 className="text-2xl font-thin text-gray-900 dark:text-white mb-1">Tech Stack</h1>
-          <p className="text-sm font-thin text-gray-600 dark:text-gray-300">Here is a list of the tech that powers my projects</p>
+          <p className="text-md md:text-md font-thin text-gray-600 dark:text-gray-300">Here is a list of the tech that powers my projects</p>
         </motion.div>
         
         <LazyMotion features={domAnimation}>
@@ -148,7 +148,7 @@ const TechStack = () => {
                   {category.title}
                 </h2>
                 <motion.div 
-                  className="flex flex-wrap gap-4"
+                  className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4"
                   variants={container}
                   initial="hidden"
                   animate="show"

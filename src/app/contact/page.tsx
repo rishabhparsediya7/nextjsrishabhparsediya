@@ -103,15 +103,15 @@ export default function ContactPage() {
           
           <div className="space-y-4">
             <motion.div variants={item} className="space-y-1">
-              <h3 className="font-thin text-gray-800 dark:text-gray-200 text-[8px] sm:text-sm">Email</h3>
+              <h3 className="font-thin text-gray-800 dark:text-gray-200 text-[8px] text-sm md:text-md">Email</h3>
               <a href="mailto:parsediyarishabh@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">
                 parsediyarishabh@gmail.com
               </a>
             </motion.div>
             
             <motion.div variants={item} className="space-y-1">
-              <h3 className="font-thin text-gray-800 dark:text-gray-200 text-[8px] sm:text-sm">Location</h3>
-              <p className="text-gray-700 dark:text-gray-300 text-[8px] sm:text-sm font-thin">New Delhi, India</p>
+              <h3 className="font-thin text-gray-800 dark:text-gray-200 text-[8px] text-sm md:text-md">Location</h3>
+              <p className="text-gray-700 dark:text-gray-300 text-[8px] text-sm md:text-md font-thin">New Delhi, India</p>
             </motion.div>
           </div>
         </motion.div>
@@ -135,7 +135,7 @@ export default function ContactPage() {
               variants={item}
               className="space-y-1"
             >
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+              <label htmlFor="name" className="block text-sm md:text-md font-medium text-gray-700 dark:text-gray-300 mb-1">
                 Name
               </label>
               <input
@@ -146,7 +146,7 @@ export default function ContactPage() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-3 text-sm py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none dark:bg-gray-700/50 dark:text-white"
+                className="w-full px-3 text-sm md:text-md py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none dark:bg-gray-700/50 dark:text-white"
               />
             </motion.div>
             
@@ -154,7 +154,7 @@ export default function ContactPage() {
               variants={item}
               className="space-y-1"
             >
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+              <label htmlFor="email" className="block text-sm md:text-md font-medium text-gray-700 dark:text-gray-300 mb-1">
                 Email
               </label>
               <input
@@ -165,7 +165,7 @@ export default function ContactPage() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-3 text-sm py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none dark:bg-gray-700/50 dark:text-white"
+                className="w-full px-3 text-sm md:text-md py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none dark:bg-gray-700/50 dark:text-white"
               />
             </motion.div>
             
@@ -173,7 +173,7 @@ export default function ContactPage() {
               variants={item}
               className="space-y-1"
             >
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+              <label htmlFor="message" className="block text-sm md:text-md font-medium text-gray-700 dark:text-gray-300 mb-1">
                 Message
               </label>
               <textarea
@@ -184,7 +184,7 @@ export default function ContactPage() {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className="w-full px-3 text-sm py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none dark:bg-gray-700/50 dark:text-white"
+                className="w-full px-3 text-sm md:text-md py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none dark:bg-gray-700/50 dark:text-white"
               />
             </motion.div>
             
@@ -197,7 +197,7 @@ export default function ContactPage() {
                 whileTap={{ scale: 0.98 }}
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 px-6 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed font-medium text-sm tracking-wide shadow-md"
+                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 px-6 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed font-medium text-sm md:text-md tracking-wide shadow-md"
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </motion.button>

@@ -26,25 +26,25 @@ function Navbar({ className }: { className?: string }) {
       <Menu>
         <div className="flex gap-4">
           <Link
-            className="flex text-sm sm:text-base items-center text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+            className="flex text-sm md:text-md sm:text-base items-center text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
             href="/#profile"
           >
             Profile
           </Link>
           <Link
-            className="flex text-sm sm:text-base items-center text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+            className="flex text-sm md:text-md sm:text-base items-center text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
             href="/#projects"
           >
             Projects
           </Link>
           <Link
-            className="flex text-sm sm:text-base items-center text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+            className="flex text-sm md:text-md sm:text-base items-center text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
             href="/#experience"
           >
             Experience
           </Link>
           <Link
-            className="flex text-sm sm:text-base items-center text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+            className="flex text-sm md:text-md sm:text-base items-center text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
             href="/#contact"
           >
             Contact

@@ -24,7 +24,7 @@ const Experience = () => {
           className="text-center mb-12"
         >
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-1">Work Experience</h1>
-          <p className="text-sm md:text-base text-gray-600 dark:text-gray-300">My professional journey so far</p>
+          <p className="text-sm md:text-md md:text-base text-gray-600 dark:text-gray-300">My professional journey so far</p>
         </motion.div>
 
         <div className="relative">
@@ -47,18 +47,18 @@ const Experience = () => {
                   </div>
                   <div>
                     <h3 className="text-base md:text-lg font-semibold text-gray-900 dark:text-white">{item.title}</h3>
-                    <p className="text-xs md:text-sm text-gray-600 dark:text-gray-300">{item.company}</p>
+                    <p className="text-xs md:text-sm md:text-md text-gray-600 dark:text-gray-300">{item.company}</p>
                   </div>
                 </div>
                 
-                <div className="flex items-center text-xs md:text-sm text-gray-500 dark:text-gray-400 mb-3">
+                <div className="flex items-center text-xs md:text-sm md:text-md text-gray-500 dark:text-gray-400 mb-3">
                   <div className="flex items-center">
                     <FiCalendar className="mr-1" />
                     <span>{item.timeline}</span>
                   </div>
                 </div>
                 
-                <div className="text-gray-600 dark:text-gray-300 text-[8px] font-thin sm:text-sm max-w-none">
+                <div className="text-gray-600 dark:text-gray-300 text-[8px] font-thin text-sm md:text-md max-w-none">
                   {item.description}
                 </div>
               </div>

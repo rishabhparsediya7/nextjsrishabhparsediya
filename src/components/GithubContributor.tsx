@@ -61,7 +61,7 @@ export default function GithubContributor() {
         }}
       >
         <motion.p 
-          className="text-zinc-700 dark:text-gray-300 text-sm font-thin mb-6 text-center max-w-3xl mx-auto"
+          className="text-zinc-700 dark:text-gray-300 text-sm md:text-md font-thin mb-6 text-center max-w-3xl mx-auto"
           variants={fadeInUp}
         >
           I actively manage my GitHub as a central hub for all my projects,

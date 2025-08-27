@@ -35,7 +35,7 @@ function ProfileSection() {
         animate="show"
       >
         <motion.p 
-          className="text-sm leading-relaxed text-gray-800 dark:text-gray-200"
+          className="text-md md:text-md leading-relaxed text-gray-800 dark:text-gray-200"
           variants={item}
         >
           Hi there 👋 <br /> I&apos;m a Full Stack Developer with 3+ years of
@@ -46,7 +46,7 @@ function ProfileSection() {
         </motion.p>
         
         <motion.p 
-          className="text-sm leading-relaxed text-gray-800 dark:text-gray-200"
+          className="text-md md:text-md leading-relaxed text-gray-800 dark:text-gray-200"
           variants={item}
         >
           My focus is on writing clean, maintainable, and performant code while
@@ -55,7 +55,7 @@ function ProfileSection() {
         </motion.p>
         
         <motion.p 
-          className="text-sm leading-relaxed text-gray-800 dark:text-gray-200"
+          className="text-md md:text-md leading-relaxed text-gray-800 dark:text-gray-200"
           variants={item}
         >
           Outside of coding, I love exploring new technologies, learning
@@ -63,7 +63,7 @@ function ProfileSection() {
         </motion.p>
         
         <motion.p 
-          className="text-sm text-gray-800 dark:text-gray-200 font-medium mt-8"
+          className="text-md md:text-md text-gray-800 dark:text-gray-200 font-medium mt-8"
           variants={item}
         >
           ~ Rishabh Parsediya

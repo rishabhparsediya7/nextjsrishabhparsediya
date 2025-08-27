@@ -28,7 +28,7 @@ export function ProjectCard({
         <div className="flex justify-between mb-4">
           <CardItem
             translateZ="50"
-            className="text-lg md:text-sm max-h-10 min-h-10 font-bold text-black dark:text-white"
+            className="text-lg md:text-sm md:text-md max-h-10 min-h-10 font-bold text-black dark:text-white"
           >
             {item.name}
           </CardItem>
@@ -46,7 +46,7 @@ export function ProjectCard({
         <CardItem
           as="p"
           translateZ="60"
-          className="text-sm max-w-sm ellipsis tracking-wide mt-2 text-neutral-600 dark:text-neutral-300"
+          className="text-sm md:text-md max-w-sm ellipsis tracking-wide mt-2 text-neutral-600 dark:text-neutral-300"
         >
           {item.description}
         </CardItem>
@@ -62,7 +62,7 @@ export function ProjectCard({
         <div className="flex flex-col justify-between items-left mt-4">
           <CardItem
             className={
-              "mt-8 text-zinc-600 dark:text-zinc-400 tracking-wide leading-relaxed text-sm flex flex-wrap gap-2"
+              "mt-8 text-zinc-600 dark:text-zinc-400 tracking-wide leading-relaxed text-sm md:text-md flex flex-wrap gap-2"
             }
           >
             {item.technology_used.map((tech) => (
