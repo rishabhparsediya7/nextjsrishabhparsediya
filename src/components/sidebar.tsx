@@ -14,7 +14,7 @@ import {
   FiX
 } from "react-icons/fi";
 import { GoArrowUpRight } from "react-icons/go";
-
+import imagekit from "../../imagekit-uploads.json";
 import Image from "next/image";
 import { FaProjectDiagram } from "react-icons/fa";
 type NavItem = {
@@ -131,7 +131,7 @@ const Sidebar = () => {
             <div className="p-0.5 rounded-full bg-gradient-to-br from-blue-400 to-purple-600 transition-transform duration-200 cursor-pointer hover:scale-110">
               <div className="p-0.2 rounded-full bg-white dark:bg-gray-900">
                 <Image
-                  src="/profile.webp"
+                  src={imagekit["profile-webp"]?.url || ""}
                   alt="author"
                   width={40}
                   height={40}
