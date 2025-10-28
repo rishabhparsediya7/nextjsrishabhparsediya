@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import StackedCards from "./StackedCards";
-
+import imagekit from "../../imagekit-uploads.json";
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -29,28 +29,38 @@ const item = {
 const techStackCards = [
   {
     id: 1,
-    src: "/trakio/home.png",
-    content: "Home",
+    name: "add-expense.png",
+    src: imagekit["add-expense"].url,
+    fileId: "6901272c5c7cd75eb8203461",
+    filePath: "/my-project/add-expense_gmDNOgmqV.png"
   },
   {
     id: 2,
-    src: "/trakio/expenses.png",
-    content: "Expenses",
+    name: "expenses.png",
+    src: imagekit["expenses"].url,
+    fileId: "690127345c7cd75eb820879e",
+    filePath: "/my-project/expenses_cKcfLLLkT.png"
   },
   {
     id: 3,
-    src: "/trakio/add-expense.png",
-    content: "Add Expense",
+    name: "home.png",
+    src: imagekit["home"].url,
+    fileId: "6901273a5c7cd75eb820ac39",
+    filePath: "/my-project/home_nM7jWlhUs.png"
   },
   {
     id: 4,
-    src: "/trakio/profile.png",
-    content: "Profile",
+    name: "login.png",
+    src: imagekit["login"].url,
+    fileId: "690127445c7cd75eb820e5cc",
+    filePath: "/my-project/login_XVs3vmYak.png"
   },
   {
     id: 5,
-    src: "/trakio/login.png",
-    content: "Login",
+    name: "profile.png",
+    src: imagekit["profile-png"].url,
+    fileId: "6901274c5c7cd75eb8213477",
+    filePath: "/my-project/profile_c6QEIE42o.png"
   },
 ];
 

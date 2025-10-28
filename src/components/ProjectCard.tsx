@@ -52,7 +52,7 @@ export function ProjectCard({
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
           <Image
-            src={`/${item.image}`}
+            src={item.image}
             height={500}
             width={500}
             className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"

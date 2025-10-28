@@ -5,7 +5,7 @@ import { cn } from "@/utils/cn";
 import Link from "next/link";
 import Image from "next/image";
 import { ThemeToggle } from "./ThemeToggle";
-
+import imagekit from "../../imagekit-uploads.json";
 export function NavbarDemo() {
   return (
     <div className="relative w-full flex items-center justify-center bg-white dark:bg-black">
@@ -52,7 +52,7 @@ function Navbar({ className }: { className?: string }) {
         </div>
         <div className="rounded-2xl overflow-hidden">
           <Image
-            src="/profile2.jpg"
+            src={imagekit["profile-png"].url}
             alt="author"
             width={50}
             height={10}

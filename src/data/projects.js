@@ -1,0 +1,169 @@
+import imagekit from "../../imagekit-uploads.json"
+export const projects = [
+    {
+      name: "Expense Manager",
+      technology_used: [
+        "Next.js",
+        "TypeScript",
+        "APIs",
+        "MongoDB",
+        "TailwindCSS"
+      ],
+      label: "Next.js",
+      image: imagekit["expensemanager"]?.url || "",
+      description: "An authenticated end to end expense manager app which lets you add your expenses and you can visualise them according to the date, according to the week and according to your expenses you have done",
+      link: "https://homemanager.vercel.app/"
+    },
+    {
+      name: "🐫 Jeera Board",
+      technology_used: ["Next.js", "TypeScript", "Drag&Drop", "TailwindCSS"],
+      label: "Next.js",
+      image: imagekit["jeeraboard"]?.url || "",
+      description: "A prototype clone for Jeera Board, showing drag and drop functionality and some ui designs, where we can add some tickets and view them and change the status for each of it by dragging and dropping.",
+      link: "https://jeeeraboard.netlify.app/"
+    },
+    {
+      name: "Weather App",
+      technology_used: [
+        "Next.js",
+        "TypeScript",
+        "OpenWeatherApi",
+        "TailwindCSS"
+      ],
+      label: "Next.js",
+      image: imagekit["weathernext"]?.url || "",
+      description: "An inso design from the dribble architecting into live visuals showing the real weather using the apis from OpenWeather.",
+      link: "https://nextjs-weather-rishabh.vercel.app/"
+    },
+    {
+      name: "Flip Game",
+      technology_used: ["React.js", "JavaScript"],
+      label: "React.js",
+      image: imagekit["flipgame-jpg"]?.url || "",
+      description: "A Flip game where you flip the boxes to match the two simultaneous symbols which should be similar",
+      link: "https://flipgame-rishabhparsediya.netlify.app/"
+    },
+    {
+      name: "BlogVerse",
+      technology_used: [
+        "React.js",
+        "Express",
+        "JavaScript",
+        "MongoDB",
+        "TailwindCSS"
+      ],
+      label: "React.js",
+      image: imagekit["blog"]?.url || "",
+      description: "An authenticated end to end blogging website for the users where users can create blogs, share their views and will have a separate account activity restricted to only user itself, developed with MERN Stack and for Authentication, used jsonwebtoken also known as jwt and bcrypt.js",
+      link: "https://rishabhparsediyablogverse.netlify.app/"
+    },
+    // {
+    //   name: "Protein Hut",
+    //   technology_used: ["JavaScript", "Node.js", "Express", "MongoDB"],
+    //   label: "MERN",
+    //   image: imagekit["nutrients"]?.url || "",
+    //   description: "This is a E Commerce site for the users who want to buy something from the products, it allows them to filter the products as well according to their needs and payment integration of RazorPay.",
+    //   link: "https://rishabhparsediyaecommerce.netlify.app/"
+    // },
+    {
+      name: "Quiz App",
+      created_at: "2024-01-10",
+      technology_used: ["React.js", "Redux", "Context APIs"],
+      label: "React.js",
+      image: imagekit["quiz"]?.url || "",
+      description: "A quiz app based on the react,js including 20 question with no time limit. It as a responsive app which makes it feasible for the all screens. After the quiz, you will be able to see the correct, wrong, and unattempted Q&A. Try using the link.",
+      link: "https://rishabhparsediyaquizapp.netlify.app/"
+    },
+    {
+      name: "HR-Management System",
+      technology_used: [
+        "Python-Django",
+        "Django",
+        "HTML",
+        "CSS",
+        "Firestore"
+      ],
+      label: "Python-Django",
+      description: "A Django Framework based Web App that records all the forms filled by the employees for the projects, records the companies information. It is integrated with a payment gateway that is used through RazorPay Payment Gateway. Database is used as firebase, as it is a live realtime database.",
+      image: imagekit["hrmanagement"]?.url || "",
+      link: "#"
+    },
+    {
+      name: "Digital Medical Diagnosis",
+      technology_used: [
+        "Python",
+        "Python-Django",
+        "HTML",
+        "CSS",
+        "Firestore",
+        "SQL"
+      ],
+      label: "Python-Django",
+      description: "It is a software that solves real-time problems and helps the users to get to know about their diseases and their severities. A user just has to upload an image of his her X-ray and the software is built in such a way that It can recognize its corresponding results",
+      image: imagekit["dmd"]?.url || "",
+      link: "#"
+    },
+    {
+      name: "Messaging Application",
+      technology_used: [
+        "Java-SpringBoot",
+        "Spring Boot",
+        "Thymeleaf",
+        "Firebase",
+        "HTML",
+        "CSS",
+        "BootStrap"
+      ],
+      label: "Java-SpringBoot",
+      description: "A project based on Spring Boot, Thymeleaf and Firebase which integrates with Twilio Messaging Service used to send SMS on phone. It records all the OTP requests being made and stored them in the firebase. It holds a static JSON file which loads all the static contacts.",
+      image: imagekit["messagingapp"]?.url || "",
+      link: "#"
+    },
+    {
+      name: "REST APIs for Blogs",
+      technology_used: ["Java", "Spring Boot", "JPA", "SQL"],
+      label: "Java",
+      description: "A RestAPI project developed for the blogs. We can perform crud operations like Save the Blog, Read all the blogs, Read the blog with ID, Delete the blog with ID, And update the blog with firebase. Also, fetch the response from id and other relevant parameters.",
+      image: imagekit["restapi"]?.url || "",
+      link: "#"
+    },
+    // {
+    //   name: "E Commerce Web App",
+    //   technology_used: [
+    //     "MERN",
+    //     "Node.js",
+    //     "HTML",
+    //     "CSS",
+    //     "BootStrap",
+    //     "MongoDB"
+    //   ],
+    //   label: "MERN",
+    //   description: "It is basic E Commerce Web App design which uploads all the pictures and the description of the products, and displays it in the frontend. The database used here is MongoDB, because of the NoSQL efficiency.",
+    //   image: imagekit["ecommerce"]?.url || "",
+    //   link: "#"
+    // },
+    {
+      name: "Weather App",
+      technology_used: ["Node.js", "HTML", "CSS", "BootStrap", "MongoDB"],
+      label: "Node.js",
+      description: "It is a weather app that shows the live weather of a city, whether it be temperature, humidity, pressure and other relevant parameters.",
+      image: imagekit["weatherapp"]?.url || "",
+      link: "https://github.com/rishabhparsediya7/WeatherApp"
+    },
+    {
+      name: "NEWS App",
+      technology_used: ["Node.js", "HTML", "CSS", "BootStrap", "MongoDB"],
+      label: "Node.js",
+      description: "News App is designed in a mobile format view, which shows all the categorical news from the different categories provided in the app. Sports, Entertainment, Music, Food, Health are the categories that are already defined. But, if one wants to search something else, that was also being introduced in the news app.",
+      image: imagekit["newsapp"]?.url || "",
+      link: "https://github.com/rishabhparsediya7/News_App"
+    },
+    {
+      name: "Portfolio",
+      technology_used: ["Next.js", "React.js", "TypeScript"],
+      label: "Next.js",
+      description: "A self portfolio developed by myself on Next.js. You can reach out to me in the contacts section. You can share the number or email, I will get back to you.",
+      image: imagekit["portfolio"]?.url || "",
+      link: "/"
+    }
+  ]
