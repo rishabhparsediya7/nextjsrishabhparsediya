@@ -16,7 +16,9 @@ import {
 import { GoArrowUpRight } from "react-icons/go";
 import imagekit from "../../imagekit-uploads.json";
 import Image from "next/image";
-import { FaProjectDiagram } from "react-icons/fa";
+import { FaCaretLeft, FaProjectDiagram } from "react-icons/fa";
+import { TbArrowLeftFromArc, TbSignLeft } from "react-icons/tb";
+import { SiLefthook } from "react-icons/si";
 type NavItem = {
   name: string;
   path: string;
@@ -67,51 +69,7 @@ const Sidebar = () => {
     setIsOpen(false);
   }, [pathname]);
 
-  const MobileMenuButton = () => (
-    <button
-      onClick={() => setIsOpen(!isOpen)}
-      className="p-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700"
-      aria-label="Toggle menu"
-    >
-      {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-    </button>
-  );
-
-  useEffect(() => {
-    if (typeof document !== "undefined") {
-      const mobileMenuButton = document.getElementById(
-        "mobile-menu-button-content"
-      );
-      if (mobileMenuButton) {
-        const mobileButton = document.createElement("div");
-        mobileButton.className = "md:hidden";
-        mobileMenuButton.replaceChildren(mobileButton);
-
-        import("react-dom/client")
-          .then(({ createRoot }) => {
-            const root = createRoot(mobileButton);
-            root.render(<MobileMenuButton />);
-
-            return () => {
-              root.unmount();
-            };
-          })
-          .catch((error) => {
-            console.error("Failed to load react-dom/client:", error);
-            // Fallback to document.createElement if needed
-            const button = document.createElement('div');
-            button.className = 'md:hidden fixed bottom-4 right-4 z-50';
-            document.body.appendChild(button);
-            
-            import("react-dom/client")
-              .then(({ createRoot }) => {
-                const fallbackRoot = createRoot(button);
-                fallbackRoot.render(<MobileMenuButton />);
-              });
-          });
-      }
-    }
-  }, [isOpen]);
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   if (!mounted) return null;
 
@@ -119,14 +77,32 @@ const Sidebar = () => {
 
   return (
     <>
+      <div className="md:hidden fixed top-4 left-4 z-50">
+        <button
+          onClick={toggleMenu}
+          className="p-2 rounded-md transition-all duration-300 ease-in-out"
+          aria-label="Toggle menu"
+        >
+          <div className="relative w-6 h-6">
+            <FiMenu 
+              className={`absolute -top-1 inset-0 transition-all duration-300 ${isOpen ? 'opacity-0 -translate-x-4 rotate-90' : 'opacity-100'}`} 
+              size={24} 
+            />
+            <TbSignLeft 
+              className={`absolute top-0 left-48 inset-0 transition-all duration-300 transform ${isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4 -rotate-90'} hover:scale-110`} 
+              size={24} 
+            />
+          </div>
+        </button>
+      </div>
       <div
         className={`fixed inset-y-0 left-0 z-40 w-64 transform ${
           isOpen
             ? "translate-x-0"
-            : "-translate-x-full border-r border-gray-600 dark:border-gray-900"
+            : "-translate-x-full"
         } md:translate-x-0 transition-transform duration-300 ease-in-out`}
       >
-        <div className="flex flex-col h-full p-2">
+        <div className="flex flex-col h-full p-2 max-[768px]:bg-black">
           <div className="p-2 flex items-center gap-2 mb-1">
             <div className="p-0.5 rounded-full bg-gradient-to-br from-blue-400 to-purple-600 transition-transform duration-200 cursor-pointer hover:scale-110">
               <div className="p-0.2 rounded-full bg-white dark:bg-gray-900">

@@ -38,8 +38,13 @@ export default function RootLayout({
             </div>
             <main className="flex-1 overflow-auto">
               <div className="min-h-screen">
-                <div className="md:hidden h-16 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 flex items-center px-4">
-                  <div id="mobile-menu-button"></div>
+                <div className="md:hidden relative h-16 border-b border-gray-200 dark:border-gray-700 flex items-center px-4">
+                  <div className="w-full flex justify-center items-center">
+                    <p className="text-gray-800 dark:text-white text-lg">Rishabh Parsediya</p>
+                  </div>
+                  <div id="mobile-menu-button">
+                    <Sidebar/>
+                  </div>
                 </div>
                 <div className="p-4 md:p-8">{children}</div>
               </div>
