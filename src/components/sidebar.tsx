@@ -56,8 +56,8 @@ const socialLinks = [
   },
 ];
 
-const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+const Sidebar = ({isOpenMenu, toggleSB }: {isOpenMenu: boolean, toggleSB?: () => void}) => {
+  const [isOpen, setIsOpen] = useState(isOpenMenu);
   const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
 
@@ -69,7 +69,10 @@ const Sidebar = () => {
     setIsOpen(false);
   }, [pathname]);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+    toggleSB?.();
+  };
 
   if (!mounted) return null;
 
@@ -85,8 +88,8 @@ const Sidebar = () => {
         >
           <div className="relative w-6 h-6">
             <FiMenu 
-              className={`absolute -top-1 inset-0 transition-all duration-300 ${isOpen ? 'opacity-0 -translate-x-4 rotate-90' : 'opacity-100'}`} 
-              size={24} 
+              className={`absolute -top-2 inset-0 transition-all duration-300 text-gray-800 dark:text-black bg-gray-200 dark:bg-gray-200 p-2 rounded-md ${isOpen ? 'opacity-0 -translate-x-4 rotate-90' : 'opacity-100'}`} 
+              size={32} 
             />
             <TbSignLeft 
               className={`absolute top-0 left-48 inset-0 transition-all duration-300 transform ${isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4 -rotate-90'} hover:scale-110`} 

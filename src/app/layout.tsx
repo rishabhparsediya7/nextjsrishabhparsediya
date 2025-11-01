@@ -34,7 +34,7 @@ export default function RootLayout({
           <div className="flex min-h-screen">
             <div className="hidden md:block md:w-64 flex-shrink-0">
               <div id="sidebar-portal" className="h-full">
-                <Sidebar />
+                <Sidebar isOpenMenu={false} />
               </div>
             </div>
             <main className="flex-1 overflow-auto">

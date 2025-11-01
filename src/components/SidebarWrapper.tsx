@@ -22,7 +22,7 @@ const SidebarWrapper = () => {
       {mounted &&
         typeof window !== 'undefined' &&
         createPortal(
-          <Sidebar />,
+          <Sidebar isOpenMenu={false} />,
           document.getElementById('sidebar-portal') as HTMLElement
         )}
       

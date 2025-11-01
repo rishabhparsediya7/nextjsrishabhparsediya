@@ -7,6 +7,9 @@ import Sidebar from "@/components/sidebar";
 export default function MobileHeader() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const pathname = usePathname();
+  const toggleMenu = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
 
   useEffect(() => {
     setIsSidebarOpen(false);
@@ -20,7 +23,7 @@ export default function MobileHeader() {
         </div>
       )}
       <div id="mobile-menu-button">
-        <Sidebar />
+        <Sidebar isOpenMenu={isSidebarOpen} toggleSB={toggleMenu} />
       </div>
     </div>
   );
