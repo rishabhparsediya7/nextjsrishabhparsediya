@@ -1,5 +1,19 @@
 export const content = [
   {
+    title: "Solutions Architect & Lead Full Stack Engineer",
+    company: "Freelance / Independent Consulting",
+    timeline: "2023 Jan - Present",
+    description: (
+      <div>
+        Partnered with enterprise clients to architect and deliver high-performance, scalable systems. 
+        Spearheaded the development of flagship projects including <strong>VisaFlow B2B HR Portal</strong>, 
+        <strong>Flagged (Feature Management Platform)</strong>, and <strong>Nomad Marketplace</strong>. 
+        Expertly managed the full software development lifecycle, from system design and security 
+        hardening to multi-platform SDK development and internationalization for global markets.
+      </div>
+    ),
+  },
+  {
     title: "Experience Engineer L2",
     company: "Publicis Sapient",
     timeline: "2025 July - Present",

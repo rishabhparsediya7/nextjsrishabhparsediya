@@ -1,9 +1,9 @@
 "use client";
 import { useTheme } from "@/context/ThemeProvider";
-import GitHubCalendar from "react-github-calendar";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import GitHubCalendar from "react-github-calendar";
 import { useInView } from "react-intersection-observer";
-import { useCallback, useState } from "react";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },

@@ -1,8 +1,109 @@
 import imagekit from "../../imagekit-uploads.json"
 export const projects = [
-    {
-      name: "Expense Manager",
-      technology_used: [
+  {
+    name: "Flagged: Feature Management",
+    isFeatured: true,
+    label: "Developer Tool",
+    technology_used: [
+      "Next.js 15",
+      "React 19",
+      "Tailwind CSS",
+      "Zustand",
+      "Framer Motion",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Drizzle ORM"
+    ],
+    summary: "Developer-first Feature Management Platform for granular software delivery.",
+    description: "High-performance platform enabling teams to toggle features and manage environments with zero-latency synchronization and advanced targeting rules.",
+    key_features: [
+      "Multi-platform SDK detecting runtime environments (Web vs. Native)",
+      "Granular Version and Attribute targeting engine (Semantic Versioning support)",
+      "Real-time toggles and environment isolation across Dev, Staging, and Prod",
+      "Full audit trail and request logging for all API interactions"
+    ],
+    contributions: [
+      "Built a unified, platform-agnostic SDK with custom storage abstraction",
+      "Developed a complex rule engine for Semantic Versioning and custom attributes",
+      "Established professional dev lifecycle with automated migrations (drizzle-kit)"
+    ],
+    impact: "Provides a centralized, scalable platform for reliable feature delivery without code redeployments.",
+    highlight: "Engineered a zero-latency targeting engine with seamless multi-platform SDK support.",
+    image: imagekit["jeeraboard"]?.url || "", // Reusing existing or placeholder
+    link: "#"
+  },
+  {
+    name: "Nomad Marketplace",
+    isFeatured: true,
+    label: "E-Commerce",
+    technology_used: [
+      "React 19",
+      "Vite",
+      "TanStack Query",
+      "Tailwind CSS 4.0",
+      "Zustand",
+      "Framer Motion",
+      "Node.js",
+      "Express",
+      "Drizzle ORM",
+      "AWS S3"
+    ],
+    summary: "High-performance multi-seller e-commerce ecosystem for global scale.",
+    description: "A comprehensive e-commerce suite featuring dynamic storefronts for vendors, an admin management suite, and a localized customer experience.",
+    key_features: [
+      "Dynamic Brand Ecosystem allowing vendors to customize storefronts in real-time",
+      "Full-stack internationalization engine supporting multi-locale (EN/DE)",
+      "Multi-tenant component library with shared design tokens (Helvetica Family)",
+      "Complex pricing and currency logic for dynamic international transactions"
+    ],
+    contributions: [
+      "Spearheaded i18n implementation with type-safe translations and dynamic detection",
+      "Built a configuration resolver service for data-driven brand layouts",
+      "Integrated AWS S3 for media and complex server-state sync with TanStack Query"
+    ],
+    impact: "Fully prepared for European markets with 100% data-driven vendor flexibility and optimized load times.",
+    highlight: "Built a scalable multi-tenant architecture with high-performance React patterns.",
+    image: imagekit["expensemanager"]?.url || "", // Reusing existing or placeholder
+    link: "#"
+  },
+  {
+    name: "VisaFlow B2B HR Portal",
+    isFeatured: true,
+    label: "Enterprise",
+    technology_used: [
+      "React 19",
+      "Vite",
+      "TailwindCSS",
+      "Node.js",
+      "Express",
+      "TypeScript",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "Zustand"
+    ],
+    summary: "Enterprise-grade B2B platform automating global visa management and compliance.",
+    description: "A centralized hub designed to streamline international employee visa processing, featuring robust case management, real-time tracking, and automated workflows.",
+    key_features: [
+      "Advanced RBAC with granular permissions for HR admins and case managers",
+      "Secure cookie-based session management with Double CSRF protection",
+      "Real-time case tracking dashboard with auditable activity logs",
+      "Centralized repository for sensitive PII data with high-security standards"
+    ],
+    contributions: [
+      "Architected the secure multi-layered authentication flow using JWT and secure cookies",
+      "Engineered a type-safe database layer using Drizzle ORM and PostgreSQL",
+      "Developed a highly responsive component library focusing on reusable UI patterns"
+    ],
+    impact: "Transitioned from conceptual brief to a secure production-ready application, drastically reducing administrative overhead.",
+    highlight: "Hardened security architecture with custom middleware and Vite-powered high-performance UI.",
+    image: imagekit["hrmanagement"]?.url || "", // Reusing existing or placeholder
+    link: "#"
+  },
+  {
+    name: "Expense Manager",
+    isFeatured: false, // Keeping it as 'Other' to highlight the 3 major ones
+    technology_used: [
         "Next.js",
         "TypeScript",
         "APIs",

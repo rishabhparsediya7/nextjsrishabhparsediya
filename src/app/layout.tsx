@@ -1,15 +1,15 @@
+import LoadingSpinner from "@/components/LoadingSpinner";
+import MobileHeader from "@/components/MobileHeader";
+import Sidebar from "@/components/sidebar";
+import { LoadingProvider } from "@/context/LoadingContext";
+import { ThemeProvider } from "@/context/ThemeProvider";
 import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/context/ThemeProvider";
-import { LoadingProvider, useLoading } from "@/context/LoadingContext";
-import LoadingSpinner from "@/components/LoadingSpinner";
-import Sidebar from "@/components/sidebar";
-import MobileHeader from "@/components/MobileHeader";
 
-const nunito = Nunito_Sans({ 
+const nunito = Nunito_Sans({
   subsets: ["latin"],
-  weight: ['400', '700']
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -31,19 +31,19 @@ export default function RootLayout({
         <LoadingProvider>
           <body className={`${nunito.className} relative min-h-screen`}>
             <LoadingSpinner />
-          <div className="flex min-h-screen">
-            <div className="hidden md:block md:w-64 flex-shrink-0">
-              <div id="sidebar-portal" className="h-full">
-                <Sidebar isOpenMenu={false} />
+            <div className="flex min-h-screen">
+              <div className="hidden md:block md:w-64 flex-shrink-0">
+                <div id="sidebar-portal" className="h-full">
+                  <Sidebar isOpenMenu={false} />
+                </div>
               </div>
+              <main className="flex-1 overflow-auto">
+                <div className="min-h-screen">
+                  <MobileHeader />
+                  <div className="p-4 md:p-8">{children}</div>
+                </div>
+              </main>
             </div>
-            <main className="flex-1 overflow-auto">
-              <div className="min-h-screen">
-                <MobileHeader/>
-                <div className="p-4 md:p-8">{children}</div>
-              </div>
-            </main>
-          </div>
           </body>
         </LoadingProvider>
       </ThemeProvider>

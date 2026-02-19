@@ -34,3 +34,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+yarn.lock
+*.lock
+*.pdf
+*.zip
+*.docx
+*.md
+*.txt

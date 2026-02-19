@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
+import { cn } from "@/utils/cn";
 
 export function ProjectCard({
   item,
@@ -13,6 +14,8 @@ export function ProjectCard({
     description: string;
     link: string;
     label: string;
+    isFeatured?: boolean;
+    summary?: string;
   };
 }) {
   return (
@@ -20,66 +23,70 @@ export function ProjectCard({
       <CardBody
         className="relative group/card 
                 hover:shadow-2xl hover:shadow-emerald-500/[0.1] 
-                bg-white dark:bg-black 
-                border-black/[0.2] dark:border-white/[0.2] 
+                bg-white dark:bg-zinc-900/40
+                border-zinc-200 dark:border-zinc-800
                 w-[100vw] sm:w-[30rem] h-auto 
-                rounded-xl p-6 border"
+                rounded-2xl p-6 border transition-all duration-300"
       >
-        <div className="flex justify-between mb-4">
+        <div className="flex justify-between items-start mb-4">
           <CardItem
             translateZ="50"
-            className="text-lg md:text-sm md:text-md max-h-10 min-h-10 font-bold text-black dark:text-white"
+            className="text-xl font-bold text-zinc-900 dark:text-white"
           >
             {item.name}
           </CardItem>
 
           <a
-            className="bg-black dark:bg-white flex justify-center max-h-7 items-center text-white dark:text-black rounded-2xl px-3 text-[12px] py-1 hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
+            className="bg-zinc-900 dark:bg-white flex justify-center h-8 items-center text-white dark:text-zinc-900 rounded-lg px-4 text-[12px] font-bold hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors"
             target="_blank"
             href={item.link}
           >
-            <p className="justify-center md:min-w-10 min-w-20 flex items-center flex-col">
-              Visit now →
-            </p>
+            Visit →
           </a>
         </div>
+
+        {item.summary && (
+          <CardItem
+            as="p"
+            translateZ="55"
+            className="text-sm font-semibold text-emerald-600 dark:text-emerald-400 mb-2"
+          >
+            {item.summary}
+          </CardItem>
+        )}
+
         <CardItem
           as="p"
           translateZ="60"
-          className="text-sm md:text-md max-w-sm ellipsis tracking-wide mt-2 text-neutral-600 dark:text-neutral-300"
+          className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 min-h-[3rem]"
         >
           {item.description}
         </CardItem>
-        <CardItem translateZ="100" className="w-full mt-4">
+
+        <CardItem translateZ="100" className="w-full mt-6">
           <Image
-            src={item.image}
+            src={item.image || "/placeholder.png"}
             height={500}
             width={500}
-            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-            alt="thumbnail"
+            className="h-48 w-full object-cover rounded-xl group-hover/card:shadow-xl transition-transform duration-500 group-hover/card:scale-[1.02]"
+            alt={item.name}
           />
         </CardItem>
-        <div className="flex flex-col justify-between items-left mt-4">
-          <CardItem
-            className={
-              "mt-8 text-zinc-600 dark:text-zinc-400 tracking-wide leading-relaxed text-sm md:text-md flex flex-wrap gap-2"
-            }
-          >
+
+        <div className="flex flex-col justify-between items-left mt-6">
+          <CardItem className="flex flex-wrap gap-2" translateZ="50">
             {item.technology_used.map((tech) => (
-              <p
-                className={`
-                                    ${
-                                      tech === item.label
-                                        ? "bg-black dark:bg-white text-white dark:text-black"
-                                        : "bg-gray-100 dark:bg-slate-800 text-black dark:text-white"
-                                    }
-                                    text-[12px] rounded-xl px-4 py-1 transition-colors
-                                    hover:bg-gray-200 dark:hover:bg-slate-700
-                                `}
+              <span
+                className={cn(
+                  "text-[10px] font-bold px-3 py-1 rounded-full border transition-colors",
+                  tech === item.label
+                    ? "bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 border-transparent"
+                    : "bg-zinc-50 dark:bg-zinc-800/50 text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700",
+                )}
                 key={tech}
               >
                 {tech}
-              </p>
+              </span>
             ))}
           </CardItem>
         </div>
